@@ -8,7 +8,7 @@ on:
       - '**.kicad_pro'
       - '**.kicad_jobset'
   workflow_dispatch:
-
+    
 jobs:
   run-kicad-jobset:
     runs-on: ubuntu-latest
@@ -26,5 +26,5 @@ jobs:
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: KiCad-outputs
-          path: gerber
+          name: jlcpcb
+          path: gerber/jlcpcb.zip
