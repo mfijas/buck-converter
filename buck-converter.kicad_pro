@@ -485,10 +485,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "gerber",
+      "plot": "jlcpcb",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "board.step",
       "svg": "",
       "vrml": ""
     },
