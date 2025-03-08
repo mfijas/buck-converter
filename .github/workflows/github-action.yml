@@ -1,0 +1,30 @@
+name: KiCad Jobset Run
+
+on:
+  push:
+    paths:
+      - '**.kicad_sch'
+      - '**.kicad_pcb'
+      - '**.kicad_pro'
+      - '**.kicad_jobset'
+  workflow_dispatch:
+
+jobs:
+  run-kicad-jobset:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run KiCad Jobset
+        uses: INTI-CMNB/KiBot@v2_dk9
+        with:
+          config: jlcpcb.kicad_jobset
+          dir: output
+          board: buck-converter.kicad_pro
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: KiCad-outputs
+          path: output
