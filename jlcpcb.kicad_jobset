@@ -134,6 +134,19 @@
         "output_path": "gerber"
       },
       "type": "folder"
+    },
+    {
+      "description": "",
+      "id": "38b82a62-0ad6-4911-a6d0-60a82b5b9e16",
+      "only": [
+        "0c942127-8ded-4640-8de6-37f3318591b6",
+        "080b7dcf-0476-48a2-b234-09ae01dc1999"
+      ],
+      "settings": {
+        "format": "zip",
+        "output_path": "gerber/jlcpcb.zip"
+      },
+      "type": "archive"
     }
   ]
 }
