@@ -34,3 +34,6 @@ fp-info-cache
 .DS_Store
 gerber/
 
+
+# KiCad local history snapshots
+.history/
